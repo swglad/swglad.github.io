@@ -11,11 +11,17 @@
   <header>
     <nav class="top-nav fixed" style="background-color: rgba(0,0,0,0.3);">
       <div class="container">
-        <ul class="right">
+        <ul class="right hide-on-small-and-down">
           <li><a href="about/index.html">ABOUT</a></li>
           <li><a href="#">PROJECTS</a></li>
           <li><a href="#">INTERESTS</a></li>
           <li><a href="#">RESUME</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-up">
+          <li><a href="about/index.html" class="tooltipped" data-position="bottom" data-tooltip="About"><i class="mdi-image-timer-auto" style="font-size: 1.25rem;"></i></a></li>
+          <li><a href="projects/index.html" class="tooltipped" data-position="bottom" data-tooltip="Projects" style="font-size: 1.25rem;">&lt;&#47;&gt;</a></li>
+          <li><a href="#" class="tooltipped" data-position="bottom" data-tooltip="Interests"><i class="mdi-action-dashboard" style="font-size: 1.25rem;"></i></a></li>
+          <li><a href="#" class="tooltipped" data-position="bottom" data-tooltip="Resume"><i class="mdi-action-description" style="font-size: 1.25rem;"></i></a></li>
         </ul>
       </div>
     </nav>
@@ -23,15 +29,35 @@
 
   <body>
     <div id="main">
-      <img src="images/Scott_laptop.jpg" style="position: fixed; top: 0px;z-index: -1; width: 100%;">
 
-      <div class="row">
-        <div class="container">
-          <h2>Scott Gladstone</h2>
-          <p class="flow-text">This site is still being built.</p>
-          <p class="flow-text" style="color: white;">Come back soon!</p>
-        </div>
-      </div>
+      <div class="slider fullscreen" style="z-index: -1;">
+        <ul class="slides">
+          <li>
+            <img src="images/Scott_laptop.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Scott Gladstone</h3>
+              <h5 class="light grey-text text-lighten-3">This site is still being built.</h5>
+              <h5 class="light grey-text text-lighten-3">Come back soon!</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/Scott_laptop.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>Scott Gladstone</h3>
+              <h5 class="light grey-text text-lighten-3">This site is still being built.</h5>
+              <h5 class="light grey-text text-lighten-3">Come back soon!</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/Scott_laptop.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Scott Gladstone</h3>
+              <h5 class="light grey-text text-lighten-3">This site is still being built.</h5>
+              <h5 class="light grey-text text-lighten-3">Come back soon!</h5>
+            </div>
+          </li>
+        </ul>
+      </div>g
 
     </div>
 
@@ -43,6 +69,8 @@
     <script>
       $( document ).ready(function(){
         $(".button-collapse").sideNav();
+        $('.tooltipped').tooltip({delay: 1});
+        $('.slider').slider({full_width: true});
       })
     </script>
   </body>
