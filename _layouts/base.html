@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <title>Scott Gladstone</title>
+  </head>
+
+  <header>
+    <nav class="top-nav fixed" style="background-color: rgba(0,0,0,0.3);">
+      <div class="container">
+        <ul class="right hide-on-small-and-down">
+          <li><a href="about/index.html">ABOUT</a></li>
+          <li><a href="projects/index.html">PROJECTS</a></li>
+          <li><a href="#">INTERESTS</a></li>
+          <li><a href="#">RESUME</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-up">
+          <li><a href="about/index.html" class="tooltipped" data-position="bottom" data-tooltip="About"><i class="mdi-image-timer-auto" style="font-size: 1.25rem;"></i></a></li>
+          <li><a href="projects/index.html" class="tooltipped" data-position="bottom" data-tooltip="Projects" style="font-size: 1.25rem;">&lt;&#47;&gt;</a></li>
+          <li><a href="#" class="tooltipped" data-position="bottom" data-tooltip="Interests"><i class="mdi-action-dashboard" style="font-size: 1.25rem;"></i></a></li>
+          <li><a href="#" class="tooltipped" data-position="bottom" data-tooltip="Resume"><i class="mdi-action-description" style="font-size: 1.25rem;"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+
+    <div id="main">
+      {{ content }}
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+      $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+        $('.tooltipped').tooltip({delay: 1});
+        $('.slider').slider({full_width: true});
+      })
+    </script>
+
+
+  </body>
+
+</html>
