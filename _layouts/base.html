@@ -16,13 +16,13 @@
     <nav class="top-nav fixed" style="background-color: rgba(0,0,0,0.3);">
       <div class="container">
         <ul class="left hide-on-small-and-down">
-          <li><a href="/">HOME</a></li>
+          <li><a class="light" href="/">Scott Gladstone</a></li>
         </ul>
         <ul class="right hide-on-small-and-down">
-          <li><a href="/about/">ABOUT</a></li>
-          <li><a href="/projects/">PROJECTS</a></li>
-          <li><a href="#">INTERESTS</a></li>
-          <li><a href="#">RESUME</a></li>
+          <li><a class="light" href="/about/">ABOUT</a></li>
+          <li><a class="light" href="/projects/">PROJECTS</a></li>
+          <li><a class="light" href="/interests/">INTERESTS</a></li>
+          <li><a class="light" href="#">RESUME</a></li>
         </ul>
         <ul class="left hide-on-med-and-up">
           <li><a href="/"><i class="mdi-action-home" style="font-size: 1.25rem;"></i></a></li>
@@ -30,7 +30,7 @@
         <ul class="right hide-on-med-and-up">
           <li><a href="/about/" class="tooltipped" data-position="bottom" data-tooltip="About"><i class="mdi-image-timer-auto" style="font-size: 1.25rem;"></i></a></li>
           <li><a href="/projects/" class="tooltipped" data-position="bottom" data-tooltip="Projects" style="font-size: 1.25rem;">&lt;&#47;&gt;</a></li>
-          <li><a href="#" class="tooltipped" data-position="bottom" data-tooltip="Interests"><i class="mdi-action-dashboard" style="font-size: 1.25rem;"></i></a></li>
+          <li><a href="/interests/" class="tooltipped" data-position="bottom" data-tooltip="Interests"><i class="mdi-action-dashboard" style="font-size: 1.25rem;"></i></a></li>
           <li><a href="#" class="tooltipped" data-position="bottom" data-tooltip="Resume"><i class="mdi-action-description" style="font-size: 1.25rem;"></i></a></li>
         </ul>
       </div>
@@ -49,9 +49,13 @@
 
     <script>
       $( document ).ready(function(){
+        $('.parallax').parallax();
         $(".button-collapse").sideNav();
         $('.tooltipped').tooltip({delay: 1});
         $('.slider').slider({full_width: true});
+        $('.collapsible').collapsible({
+          accordion : false
+        });
       })
     </script>
 
