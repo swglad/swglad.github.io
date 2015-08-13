@@ -1,1 +1,1 @@
-# http://swglad.github.io
+# //swglad.github.io
